@@ -67,6 +67,18 @@ li {
 }
 
 /*************************************** SECTION HERO************************************/
+
+.hero {
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
+    height: 100vh;
+    /* Donne à la section toute la hauteur de la fenêtre */
+}
+
+
 .hero h2 {
     font-size: 6vw;
     font-family: "WindSong", cursive;

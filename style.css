@@ -44,17 +44,17 @@ li {
 }
 
 .header img {
-    width: 10%;
+    width: 12%;
     margin-left: 50px;
 }
 
 .navHeader {
     width: 60%;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .header img {
-    width: 10%;
+    width: 11%;
 }
 
 .header {
@@ -67,26 +67,28 @@ li {
 }
 
 /*************************************** SECTION HERO************************************/
-.hero {
-    height: 100vh;
-}
-
 .hero h2 {
-    font-size: 8vw;
+    font-size: 6vw;
     font-family: "WindSong", cursive;
     font-weight: 500;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
-.container {
-    max-width: 1200px;
+.containery {
+    max-width: 100%;
+    /* Ajuster à 100% */
     width: 100%;
     margin: auto;
     display: flex;
+    gap: 20px;
+    /* Réduire l'écart pour les petits écrans */
+    flex-wrap: wrap;
+    /* Permet d'ajuster le contenu en fonction de la taille */
 }
+
 
 .btn {
     background-color: #F66909;
@@ -97,7 +99,7 @@ h1 {
     margin-top: 25px;
     display: block;
     width: fit-content;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .width45 {
@@ -115,6 +117,7 @@ h1 {
 /******************************************SECTION ENGAGEMENT*****************************/
 #engagement {
     margin-bottom: 35px;
+    padding: 40px;
 }
 
 .engagement h3,
@@ -123,7 +126,7 @@ h1 {
     padding-top: 65px;
     font-family: "Inter", serif;
     font-weight: 600;
-    font-size: 34px;
+    font-size: 33px;
 }
 
 .engagement p,
@@ -135,6 +138,10 @@ h1 {
 }
 
 /***************************************SECTION BIENFAIT DU MIEL**************************/
+.bienfait {
+    padding: 40px;
+}
+
 .bienfait h4 {
     font-family: "Inter", serif;
     font-weight: 700;
@@ -153,18 +160,17 @@ h1 {
 
 /************************************SECTION PRODUITS*************************************/
 .produits {
-    margin-left: 20px;
-    margin-bottom: 20px;
+    padding: 40px;
 }
 
 .produits h3 {
-    width: 100%;
-    margin-left: 620px;
-    padding: 30px;
+    margin-left: 0;
+    padding: 15px;
     font-family: "Inter", serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 20px;
 }
+
 
 .card {
     width: 267px;
@@ -205,7 +211,9 @@ h1 {
 /***********************************SECTION NOS CLIENTS**********************************/
 .clients {
     padding-bottom: 60px;
+    padding: 40px;
 }
+
 
 .clients h3 {
     width: 100%;
@@ -240,19 +248,24 @@ h1 {
     margin-left: 14px;
 }
 
-/* SECTION NOUS TROUVER */
+/*********************************SECTION NOUS TROUVER**************************/
+.noustrouver {
+    padding: 40px;
+}
+
 .nousTrouver h3 {
     font-family: "Inter", serif;
     font-weight: 700;
     font-size: 26px;
     margin-top: 45px;
+    width: 100%;
+    margin-left: 50px;
+    ;
 }
 
 .nousTrouver iframe {
+    margin-left: 0;
     width: 100%;
-    max-width: 873px;
-    height: 386px;
-    margin-top: 25px;
 }
 
 .adresse p {
@@ -263,32 +276,27 @@ h1 {
 
 /* FOOTER */
 .contact {
-    margin-top: 30px;
-    height: 80vh;
-    gap: 50px;
+    margin-top: 10px;
+    padding: 20px;
 }
 
 .contact h3 {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    font-family: "Inter", serif;
-    font-weight: 700;
-    font-size: 24px;
 }
 
-.contact p {
-    margin-top: 12px;
-    font-family: "Inter", serif;
-    font-weight: 500;
-    font-size: 15px;
+.contact p,
+.contact a {
+    font-size: 12px;
+    /* Ajuster la taille du texte sur mobile */
 }
 
 .contact a {
     margin-top: 12px;
     font-family: "Inter", serif;
     font-weight: 500;
-    font-size: 14px;
 }
+
 
 /* MEDIA QUERIES */
 @media all and (max-width: 800px) {
@@ -339,22 +347,33 @@ h1 {
     }
 }
 
-@media all and (max-width: 500px) {
-    .hero img {
-        width: 70%;
-    }
-
+@media all and (max-width: 800px) {
     .hero h2 {
         font-size: 80px;
+        /* Réduire encore plus la taille de la police */
     }
 
-    .smallJustifyCenter {
-        justify-content: center;
+    .containery {
+        gap: 10px;
+        /* Réduire l'écart entre les éléments */
     }
 
-    .smallReverse {
-        flex-direction: column-reverse;
+    .btn {
+        font-size: 18px;
+        /* Réduire la taille du texte du bouton */
+    }
+}
+
+@media all and (max-width: 500px) {
+    .hero h2 {
+        font-size: 50px;
+        /* Réduire la taille de la police */
     }
 
-
+    .btn {
+        padding: 15px;
+        /* Réduire la taille du bouton */
+        font-size: 16px;
+        /* Ajuster la taille de police pour mobile */
+    }
 }
